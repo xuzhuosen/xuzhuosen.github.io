@@ -136,7 +136,59 @@
       </div>
     </header>
 
-    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#unix-io模型简介">Unix IO模型简介</a></li>
+    <li><a href="#同步阻塞io">同步阻塞IO</a></li>
+    <li><a href="#同步非阻塞io">同步非阻塞IO</a></li>
+    <li><a href="#io复用">IO复用</a></li>
+    <li><a href="#信号驱动io">信号驱动IO</a></li>
+    <li><a href="#异步io">异步IO</a></li>
+    <li><a href="#五大io模型的比较">五大IO模型的比较</a></li>
+    <li><a href="#io复用-1">IO复用</a>
+      <ul>
+        <li><a href="#select">select</a></li>
+        <li><a href="#poll">poll</a></li>
+        <li><a href="#比较select和poll">比较select和poll</a>
+          <ul>
+            <li><a href="#功能">功能</a></li>
+            <li><a href="#速度">速度</a></li>
+          </ul>
+        </li>
+        <li><a href="#epoll">epoll</a>
+          <ul>
+            <li><a href="#工作模式">工作模式</a></li>
+          </ul>
+        </li>
+        <li><a href="#应用场景">应用场景</a>
+          <ul>
+            <li><a href="#1-select-应用场景">1. select 应用场景</a></li>
+            <li><a href="#2-poll-应用场景">2. poll 应用场景</a></li>
+            <li><a href="#3-epoll-应用场景">3. epoll 应用场景</a></li>
+            <li><a href="#4一般都使用非阻塞io">4一般都使用非阻塞IO</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#事件处理模式">事件处理模式</a>
+      <ul>
+        <li><a href="#reactor">Reactor</a></li>
+        <li><a href="#proactor">Proactor</a></li>
+      </ul>
+    </li>
+    <li><a href="#unix中的io流程">Unix中的IO流程</a>
+      <ul>
+        <li><a href="#服务端">服务端</a></li>
+        <li><a href="#客户端">客户端</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
     <div class="post-content">
       <h1 id="unix-io模型简介">Unix IO模型简介</h1>
 <p>一个输入操作通常包括两个阶段：</p>
